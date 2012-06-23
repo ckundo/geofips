@@ -13,7 +13,7 @@ module Geofips
       @sw_lat = 0.0
       @sw_lng = 0.0
 
-      location_rows = CSV.read('lib/locations.csv', { headers: true, header_converters: :symbol })
+      location_rows = CSV.read('lib/data/locations.csv', { headers: true, header_converters: :symbol })
       location_row = find_by_code(location_rows, code)
     end
 
